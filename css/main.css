@@ -2561,7 +2561,7 @@ section#contact p {
   min-height: 400px;
 }
 #blog-content .row {
-  margin: 40px 0px;
+  margin: 30px 0px;
 }
 #blog-content h2 {
   font-size: 32px;
@@ -2573,6 +2573,7 @@ section#contact p {
 }
 #blog-content h4 {
   display: block;
+  width: 100%;
   margin: 40px 0 20px 0;
   font-size: 24px;
 }
@@ -2582,8 +2583,11 @@ section#contact p {
   padding-right: 10px;
 }
 #blog-content h5 {
+  width: 100%;
   font-size: 20px;
-  margin-bottom: 15px;
+  margin: 20px 0 20px 0;
+  display: block;
+  color: #1a8279;
 }
 #blog-content .article-a {
   color: #FF6B50;
@@ -2614,14 +2618,17 @@ section#contact p {
   font-size: 18px;
   text-align: justify;
   line-height: 1.6;
-  margin: 10px;
 }
 #blog-content img {
   width: 100%;
 }
 #blog-content .good-point {
   font-weight: bold;
-  box-shadow: inset 0 -0.55em 0 #ffcdcc;
+  box-shadow: inset 0 -0.55em 0 #b4efe3;
+}
+#blog-content .two {
+  display: block;
+  width: 100%;
 }
 #blog-content .article-video {
   display: block;
@@ -2631,6 +2638,13 @@ section#contact p {
 #blog-content .article-video video {
   width: 100%;
   border-radius: 20px;
+}
+#blog-content .blog-word {
+  padding: 0;
+  margin: 0;
+}
+#blog-content .blog-img {
+  padding: 0 30px;
 }
 #blog-content .three {
   margin: 0 auto;
@@ -2684,7 +2698,7 @@ section#contact p {
   min-height: 100px;
   background: #f3fefb;
   padding: 30px 30px;
-  margin: 40px 0;
+  margin: 20px 0;
   text-align: center;
   font-weight: bold;
   line-height: 1.6;
@@ -2754,8 +2768,16 @@ section#contact p {
   text-align: left;
 }
 
+.list-point {
+  display: block;
+  width: 100%;
+}
 .list-point li {
-  padding-bottom: 20px;
+  margin-bottom: 10px;
+  list-style-type: disc;
+}
+.list-point li.list-number {
+  list-style-type: decimal-leading-zero;
 }
 
 @media screen and (max-width: 500px) {
