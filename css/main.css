@@ -2508,21 +2508,21 @@ section#contact p {
 }
 
 .vlog-title {
-  background-image: url("/images/circle.svg"), url("/images/circle.svg"), url("/images/vlog-head.png");
+  background-image: url("../images/circle.svg"), url("../images/circle.svg"), url("../images/vlog-head.png");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: top -150px left -10%, bottom -150px right -10%, top center;
   background-size: 250px, 250px, cover;
 }
 
 .news-title {
-  background-image: url("/images/red-Circle.svg"), url("/images/red-Circle.svg"), url("/images/news-head.png");
+  background-image: url("../images/red-Circle.svg"), url("../images/red-Circle.svg"), url("../images/news-head.png");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: top -150px left -10%, bottom -150px right -10%, top center;
   background-size: 250px, 250px, cover;
 }
 
 .interview-title {
-  background-image: url("/images/circle.svg"), url("/images/circle.svg"), url("/images/Interview-head.png");
+  background-image: url("../images/circle.svg"), url("../images/circle.svg"), url("../images/Interview-head.png");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: top -150px left -10%, bottom -150px right -10%, top center;
   background-size: 250px, 250px, cover;
@@ -2625,10 +2625,6 @@ section#contact p {
 #blog-content .good-point {
   font-weight: bold;
   box-shadow: inset 0 -0.55em 0 #b4efe3;
-}
-#blog-content .two {
-  display: block;
-  width: 100%;
 }
 #blog-content .article-video {
   display: block;
