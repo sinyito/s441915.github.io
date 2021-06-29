@@ -139,6 +139,7 @@
 
     .row {
         margin: 30px 0px;
+        width:100%;
     }
 
     //通用表
@@ -158,18 +159,17 @@
         width:100%;
         margin: 40px 0 20px 0;
         font-size: 24px;
+        line-height: 1.5;
+        border-left: 5px #0ECEA2 solid;
+        padding-left:10px;
     }
 
-    h4:before {
-        content: '';
-        border-left: 5px #0ECEA2 solid;
-        padding-right: 10px;
-    }
 
     h5 {
         width: 100%;
         font-size: 20px;
         margin: 20px 0 20px 0;
+        line-height: 1.5;
         display: block;
         color:#1a8279;
 
@@ -241,9 +241,21 @@
     .blog-word{
         padding:0;
         margin:0;
+        position: relative;
     }
     .blog-img{
         padding:0 30px;
+    }
+    .word-bg{
+        display: block;
+        width:160px;
+        height: 122px;
+        background: url("../images/article/2021/interview/0701-comic-bg.png");
+        background-size: cover;
+    position:absolute;
+    bottom:-120px;
+    right:0;
+
     }
     //三欄式
     .three {
@@ -349,29 +361,44 @@
 
     //img照片
     .blog-photo {
-        margin: 40px 0;
         justify-content: center;
         display: flex;
     }
 
     .size-XL {
         width: 1000px;
+        margin:0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     .size-L {
         width: 700px;
+        margin:0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     .size-M {
         width: 600px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        margin:0 auto;
     }
 
     .size-S {
         width: 400px;
+        margin:0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     .size-XS {
         width: 200px;
+        margin:0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
 
@@ -472,9 +499,19 @@
 
     #blog-content .row {
         margin: 20px 0px;
+        width:100%;
     }
 
     nav#navbar-example3 {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width:900px) {
+
+    #blog-content .word-bg{
         display: none;
     }
 

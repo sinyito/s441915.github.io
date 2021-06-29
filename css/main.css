@@ -85,7 +85,7 @@ h1 {
   position: absolute;
   right: 0;
   top: 5px;
-  background: url("/images/btn-icon-arrow-red.svg") no-repeat top center;
+  background: url("images/btn-icon-arrow-red.svg") no-repeat top center;
   background-size: 16px;
   vertical-align: middle;
   transition: right 0.3s ease-in-out;
@@ -307,11 +307,11 @@ h1 {
   overflow: hidden;
   text-indent: -999px;
   float: left;
-  background: url("/images/logo-color.svg") no-repeat left top;
+  background: url("images/logo-color.svg") no-repeat left top;
   background-size: 180px;
 }
 #header .navbar-brand:hover {
-  background: url("/images/logo_animate.gif") no-repeat left top;
+  background: url("images/logo_animate.gif") no-repeat left top;
   background-size: contain;
 }
 #header .nav-link:hover {
@@ -437,16 +437,16 @@ h1 {
   overflow: hidden;
   text-indent: -999px;
   float: left;
-  background: url("/images/logo@2x.png") no-repeat left top;
+  background: url("images/logo@2x.png") no-repeat left top;
   background-size: 180px;
   background-size: contain;
 }
 #kv .navbar-brand:hover {
-  background: url("/images/logo_animate_w.gif") no-repeat left top;
+  background: url("images/logo_animate_w.gif") no-repeat left top;
   background-size: contain;
 }
 #kv .navbar-light .navbar-toggler-icon {
-  background-image: url("/images/menu_dark_m.svg");
+  background-image: url("images/menu_dark_m.svg");
   background-size: 24px 20px;
 }
 #kv .title {
@@ -1267,7 +1267,7 @@ h1 {
     overflow: hidden;
     text-indent: -999px;
     float: left;
-    background: url("/images/logo-color.svg") no-repeat left top;
+    background: url("images/logo-color.svg") no-repeat left top;
     background-size: contain;
   }
 
@@ -1402,7 +1402,7 @@ h1 {
   animation: Moviescale 1s ease-in-out 0.8s forwards;
 }
 #about .playpause {
-  background-image: url("/images/play.svg");
+  background-image: url("images/play.svg");
   background-repeat: no-repeat;
   width: 15%;
   height: 15%;
@@ -2496,7 +2496,7 @@ section#contact p {
   display: block;
   width: 30px;
   height: 1px;
-  background: url("/images/sort-line.svg") left center no-repeat;
+  background: url("images/sort-line.svg") left center no-repeat;
 }
 #blog-head .to-sort::after {
   float: left;
@@ -2549,7 +2549,7 @@ section#contact p {
   display: block;
   width: 24px;
   height: 24px;
-  background: url("/images/icon-share.svg") no-repeat left top;
+  background: url("images/icon-share.svg") no-repeat left top;
   float: left;
   margin-right: 5px;
 }
@@ -2562,6 +2562,7 @@ section#contact p {
 }
 #blog-content .row {
   margin: 30px 0px;
+  width: 100%;
 }
 #blog-content h2 {
   font-size: 32px;
@@ -2576,16 +2577,15 @@ section#contact p {
   width: 100%;
   margin: 40px 0 20px 0;
   font-size: 24px;
-}
-#blog-content h4:before {
-  content: "";
+  line-height: 1.5;
   border-left: 5px #0ECEA2 solid;
-  padding-right: 10px;
+  padding-left: 10px;
 }
 #blog-content h5 {
   width: 100%;
   font-size: 20px;
   margin: 20px 0 20px 0;
+  line-height: 1.5;
   display: block;
   color: #1a8279;
 }
@@ -2638,9 +2638,20 @@ section#contact p {
 #blog-content .blog-word {
   padding: 0;
   margin: 0;
+  position: relative;
 }
 #blog-content .blog-img {
   padding: 0 30px;
+}
+#blog-content .word-bg {
+  display: block;
+  width: 160px;
+  height: 122px;
+  background: url("../images/article/2021/interview/0701-comic-bg.png");
+  background-size: cover;
+  position: absolute;
+  bottom: -120px;
+  right: 0;
 }
 #blog-content .three {
   margin: 0 auto;
@@ -2726,24 +2737,38 @@ section#contact p {
   border-radius: 6px;
 }
 #blog-content .blog-photo {
-  margin: 40px 0;
   justify-content: center;
   display: flex;
 }
 #blog-content .size-XL {
   width: 1000px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 #blog-content .size-L {
   width: 700px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 #blog-content .size-M {
   width: 600px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin: 0 auto;
 }
 #blog-content .size-S {
   width: 400px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 #blog-content .size-XS {
   width: 200px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 #blog-content .related-link {
   display: block;
@@ -2837,9 +2862,15 @@ section#contact p {
 
   #blog-content .row {
     margin: 20px 0px;
+    width: 100%;
   }
 
   nav#navbar-example3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  #blog-content .word-bg {
     display: none;
   }
 }
