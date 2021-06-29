@@ -17,12 +17,12 @@
         overflow: hidden;
         text-indent: -999px;
         float: left;
-        background: url('/images/logo-color.svg') no-repeat left top;
+        background: url('../images/logo-color.svg') no-repeat left top;
         background-size: 180px;
     }
 
     .navbar-brand:hover {
-        background: url('/images/logo_animate.gif') no-repeat left top;
+        background: url('../images/logo_animate.gif') no-repeat left top;
         background-size: contain;
     }
     .nav-link:hover {
