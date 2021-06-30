@@ -34,16 +34,16 @@
       overflow: hidden;
       text-indent: -999px;
       float: left;
-      background: url("images/logo@2x.png") no-repeat left top;
+      background: url("../images/logo@2x.png") no-repeat left top;
       background-size: 180px;
       background-size: contain;
     }
     .navbar-brand:hover{
-      background:url("images/logo_animate_w.gif") no-repeat left top;
+      background:url("../images/logo_animate_w.gif") no-repeat left top;
       background-size: contain;
     }
     .navbar-light .navbar-toggler-icon{
-      background-image: url("images/menu_dark_m.svg");
+      background-image: url("../images/menu_dark_m.svg");
       background-size:24px 20px;
      
   }
