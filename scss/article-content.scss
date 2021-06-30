@@ -249,11 +249,11 @@
     .word-bg{
         display: block;
         width:160px;
-        height: 122px;
-        background: url("../images/article/2021/interview/0701-comic-bg.png");
-        background-size: cover;
+        height: 180px;
+        background: url("../images/article/2021/interview/0701-comic-bg.png") no-repeat;
+        background-size: auto 100%;
     position:absolute;
-    bottom:-120px;
+    bottom:-130px;
     right:0;
 
     }
